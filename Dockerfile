@@ -47,7 +47,8 @@ RUN uv sync --locked
 
 
 # Explicitly copy DMV handbook PDF
-COPY src/dmv.pdf src/dmv.pdf
+COPY src/agent_starter_python.egg-info/dmv.pdf src/dmv.pdf
+
 
 # Copy all remaining application files into the container
 # This includes source code, configuration files, and dependency specifications

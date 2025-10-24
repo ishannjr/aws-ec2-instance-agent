@@ -16,7 +16,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores.faiss import FAISS
 from langchain_community.document_loaders.pdf import PyPDFLoader
 
-PDF_PATH = os.path.join(os.path.dirname(__file__), "agent_starter_python.egg-info", "dmv.pdf")
+PDF_PATH = os.path.join(os.path.dirname(__file__), "dmv.pdf")
 INDEX_PATH = os.path.join(os.path.dirname(__file__), "dmv_index.faiss")
 
 

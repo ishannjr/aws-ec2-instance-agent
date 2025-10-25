@@ -7,4 +7,4 @@ services:
       LIVEKIT_URL: "wss://testing-voice-agents-rgwx8hsx.livekit.cloud"
       LIVEKIT_API_KEY: "APIyu3V7R6xnZYp"
       LIVEKIT_API_SECRET: "JYAij9a6s1MR0WewhRVrh06mnM8vMtaO75IQjmfgWPk"
-      OPENAI_API_KEY: "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"
+      OPENAI_API_KEY: "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"

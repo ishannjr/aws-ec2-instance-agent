@@ -21,18 +21,14 @@ INDEX_PATH = os.path.join(os.path.dirname(__file__), "dmv_index.faiss")
 
 
 def build_or_load_index():
-    # Load and chunk the PDF
     loader = PyPDFLoader(PDF_PATH)
     docs = loader.load()
     chunks = simple_chunk_documents(docs, chunk_size=1000, chunk_overlap=200)
-
-    # Load OpenAI API key from environment
     openai_api_key = os.getenv("OPENAI_API_KEY")
     if not openai_api_key:
         raise ValueError("OPENAI_API_KEY not set in environment. Please add it to your .env.local or environment variables.")
     embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
-    # Build or load FAISS index
     if os.path.exists(INDEX_PATH):
         db = FAISS.load_local(INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
     else:

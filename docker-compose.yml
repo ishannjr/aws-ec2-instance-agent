@@ -7,4 +7,4 @@ services:
       LIVEKIT_URL: "wss://testing-voice-agents-rgwx8hsx.livekit.cloud"
       LIVEKIT_API_KEY: "APIyu3V7R6xnZYp"
       LIVEKIT_API_SECRET: "JYAij9a6s1MR0WewhRVrh06mnM8vMtaO75IQjmfgWPk"
-  # OPENAI_API_KEY should be set via environment or .env file, not committed here
+      OPENAI_API_KEY: "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"
